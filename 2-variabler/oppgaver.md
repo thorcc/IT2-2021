@@ -21,7 +21,7 @@
     1. [Se film om valg i javascript](https://scrimba.com/p/pnnQQfk/cwP8nsm)
     2. [Oppgave med valg](https://scrimba.com/p/pnnQQfk/c6kWRh7)
 
-> Obs: Hvis dere ikke har lyst, trenger ikke spille inn screencast. Oppgaven kan gjøres i VS Code på deres maskin.
+> Obs: Hvis dere ikke har lyst, trenger dere ikke spille inn screencast. Oppgaven trenger ikke gjøres i scrimba, den kan også gjøres i VS Code.
 
 - Prøv selv s. 79:
     1. Gjør oppgave 1 - 4 (alle)
