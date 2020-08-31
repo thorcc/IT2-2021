@@ -6,7 +6,7 @@
     1. Gjør oppgave 1 - 6 (alle)
 
 > Tips: Oppgave 3: Bruk `prompt("Beskjed til bruker");` for å hente input fra bruker.  
-> Ressurser: [film om variabler](https://scrimba.com/p/pnnQQfk/cPNVbuq)
+> Bonus: [film om variabler](https://scrimba.com/p/pnnQQfk/cPNVbuq)
 
 ## Tallvariabler
 
