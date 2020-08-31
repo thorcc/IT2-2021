@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, p{
+            background-color: green;
+            text-align: center;
+        }
+        .arsenal{
+            background-color: red;
+        }
+        #ars{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Min sommerferie</h1>
+    <p>I sommer var jeg på kjøretur</p>
+    <ul>
+        <li class="arsenal">IK Start</li>
+        <li id="ars" class="arsenal">Arsenal</li>
+        <li>Union Berlin</li>
+    </ul>
+    <ul>
+        <li>Kristiansand</li>
+        <li>Stavanger</li>
+        <li>Bergen</li>
+        <li>Ålesund</li>
+    </ul>
+
+    <script>
+        window.onkeypress = () => {
+            document.body.style.backgroundColor = "blue"; 
+            alert("hei!");
+            location = "https://vg.no";
+        }    
+        document.write(innerWidth);
+        document.write("<br>");
+        document.write(navigator.appVersion);
+        document.write("<br>");
+        document.write(location);
+
+
+        console.log(document.body);
+        </script>
+
+</body>
+</html>

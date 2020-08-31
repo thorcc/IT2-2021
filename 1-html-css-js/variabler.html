@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Velkommen til Thors JS-side!</h1>"); // skriver en string ut på nettsiden
+        document.write(`<p>4 + 4 = <b>${4 + 4}</b></p>`); // Skriver en template string som inneholder javascript-kode
+    
+        // Variabler
+
+        // -- let --
+        let navn = "tc"; // oppretter en variabel, navn, og tilordner verdien "tc"
+
+        document.write("<p>navn: " + navn + "</p>");
+
+        navn = "thor christian"; // endrer verdien til variabelen navn
+
+        document.write(`<p>navn: ${navn}</p>`);
+
+        // --const--
+
+        const alder = 29; // oppretter en konstant variabel, alder, og tilordner verdien 29
+
+        alder = 32; // får en feilmelding, fordi alder er en konstant
+
+        document.write(`<p>Alder: ${alder} år</p>`);
+
+        // --var--
+        var tall = 23; // gammel skrivemåte, fugnerer (nesten) helt likt som let og const
+
+        tall = 43; // endrer verdien på tall
+    </script>
+</body>
+</html>
