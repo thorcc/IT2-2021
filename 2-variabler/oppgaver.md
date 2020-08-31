@@ -12,13 +12,13 @@
 
 - Prøv selv s. 60:
     1. Gjør oppgave 1
-    2. Se [film om tilfeldige tall i javascript](https://scrimba.com/p/pnnQQfk/cDe7phr) og gjør oppgave 2
+    2. [Se film om tilfeldige tall i javascript](https://scrimba.com/p/pnnQQfk/cDe7phr) og gjør oppgave 2
     3. Gjør oppgavene 3 - 5
 
 ## Valg (if-setninger)
 
 - Oppgave på scrimba:
-    1. Se [film om valg i javascript](https://scrimba.com/p/pnnQQfk/cwP8nsm)
+    1. [Se film om valg i javascript](https://scrimba.com/p/pnnQQfk/cwP8nsm)
     2. [Oppgave med valg](https://scrimba.com/p/pnnQQfk/c6kWRh7)
 
 > Obs: Hvis dere ikke har lyst, trenger ikke spille inn screencast. Oppgaven kan gjøres i VS Code på deres maskin.
