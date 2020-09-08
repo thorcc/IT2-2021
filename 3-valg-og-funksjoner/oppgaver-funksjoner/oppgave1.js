@@ -23,6 +23,7 @@ Tips2: Pi i javascript er Math.PI
 
 function arealSirkel(radius){
     // Skriv koden din her.
+    
 }
 
 arealSirkel(24);
