@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function visBetaling(pris){
+            let rabatt = 0.2;
+            let tilbudspris = pris * (1 - rabatt);
+            document.write(`Pris: ${pris}, tilbudspris: ${tilbudspris}`);
+            //document.write("Pris: " + pris + ", tilbudspris:" + tilbudspris);
+        }
+
+        visBetaling(500);
+        visBetaling(700);
+        visBetaling(1200);
+
+    </script>
+</body>
+</html>

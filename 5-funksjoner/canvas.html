@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <script>
+        const canvas1 = document.querySelector("#canvas1");
+        const canvas2 = document.querySelector("#canvas2");
+        const ctx1 = canvas1.getContext("2d");
+        const ctx2 = canvas2.getContext("2d");
+
+        ctx1.fillRect(20,20,40,40);
+        ctx2.fillRect(20,20,40,40);
+    </script>
+</body>
+</html>
