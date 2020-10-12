@@ -85,6 +85,6 @@ I'm Thinking of Ending Things
 
 ## Utfordring: Coolors
 
-- Lag en kopi av nettstedet coolors: [Coolor.co](https://coolors.co/0c090d-e01a4f-f15946-f9c22e-53b3cb)
+- Lag en kopi av nettstedet coolors: [Coolors.co](https://coolors.co/0c090d-e01a4f-f15946-f9c22e-53b3cb)
 - Tips: random-funksjon for rgb-farger.
 - Bruk: `querySelectorAll("selektor")` for å hente alle elementer av en selektor, og for-of for å gå gjennom alle
