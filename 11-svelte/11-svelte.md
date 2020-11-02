@@ -15,7 +15,7 @@ Noen ganger henger ikke Scrimba helt med, da er det bare å stoppe filmen og opp
 | Snurre teksten rundt                     | [https://scrimba.com/scrim/cqp7G2fG](https://scrimba.com/scrim/cqp7G2fG) |
 | Hvem blir president i USA                | [https://scrimba.com/scrim/cLgGkPAV](https://scrimba.com/scrim/cLgGkPAV) |
 
-# GUI
+### GUI
 | Beskrivelse                        | URL                                |
 | ---------------------------------- | ---------------------------------- |
 | Select-liste (Velg hovedrett)      | [https://scrimba.com/scrim/ceq796AR](https://scrimba.com/scrim/ceq796AR) |
