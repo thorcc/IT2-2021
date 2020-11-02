@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let mineTall = [9, 3, 1, 2];
+        mineTall.pop(); // fjerner siste
+        mineTall.unshift(); // fjerner første
+
+        // [3, 1];
+        mineTall.splice(1,0,2);
+
+        //[3, 2, 1]
+        mineTall.splice(3,0,"Stilig");
+        mineTall.splice(5,0,true);
+
+        //[3,2,1,"Stilig",true]
+
+        let toD = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ];
+
+        console.log(toD[1][2]); // 6
+        console.log(toD[2][1]); // 8
+        console.log(toD[0][0]); // 1
+    </script>
+</body>
+</html>

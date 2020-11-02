@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // Arrayer
+
+        let minListe = [23, "thor", 43];
+        
+        // Hente ut fra array (liste)
+        console.log(minListe[1]);
+        console.log(minListe[0]);
+
+
+        // Array-metoder
+        minListe.push(42); // legger til verdi sist i listen
+        minListe.unshift("dette legges først"); // legger til verdi først i listen
+
+        minListe.pop(); // fjerner siste verdi/element i listen
+        minListe.shift(); // fjerner første verdi/element i listen
+        
+        let minLangeListe = [2,3,4,2,1,2,3,5,7,4,2,1,7,7];
+        minLangeListe.splice(6, 5);
+        // .splice(startIndeks, antallSomSkalSlettes);
+
+        minLangeListe.splice(2,0,"heisann");
+
+        let navn = ["Per", "Pål", "Espen","Pål"];
+
+        navn.splice(navn.indexOf("Pål"),1); // søker etter "Pål" i listen, og fjerner verdien fra listen
+
+        console.log(navn);
+
+        for(let ettNavn of navn){
+            console.log(ettNavn);
+        }
+
+
+        // Objekter
+
+        let megSelv = {
+            navn: "Thor Christian",
+            alder: 29,
+            yrke: "Lærer"
+        }
+
+        // Hente ut fra objekt
+        console.log(megSelv.navn);
+        console.log(megSelv["navn"]);
+
+        let egenskap = prompt("Hva vil du vite?");
+
+        console.log(megSelv[egenskap]);
+
+
+        let fotballspillere = [
+            {
+                navn: "Harry Kane",
+                maal: 5,
+                klubb: "Tottenham",
+                nasjonalitet: "England",
+            },
+            {
+                navn: "Mohammed Salah",
+                maal: 6,
+                klubb: "Liverpool",
+            },
+        ];
+
+        console.log(fotballspillere[2]["maal"]);
+    </script>
+</body>
+</html>

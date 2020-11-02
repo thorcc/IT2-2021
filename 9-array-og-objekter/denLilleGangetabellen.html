@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let gangetabellen = [];
+
+        for(let i = 0; i < 11; i += 1){
+            let inni = [];
+            for(let j = 0; j < 11; j += 1){
+                inni.push(i * j);
+            }
+            gangetabellen.push(inni);
+        }
+
+        let tall1 = Number(prompt("Tall 1"));
+        let tall2 = Number(prompt("Tall 2"));
+
+        console.log(gangetabellen[tall1][tall2]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let telefonbok = {
+            Arne: 22334455,
+            Lisa: 95959595,
+            Jonas: 97959795,
+            Peder: 12345678,
+        }
+
+        function hentNummer(navn){
+            if(telefonbok[navn]){
+                console.log(telefonbok[navn]);
+            }
+            else{
+                console.log("Navnet finnes ikke i telefonboka");
+            }
+        }
+
+        hentNummer(prompt("Skriv inn navn"));
+
+    </script>
+</body>
+</html>

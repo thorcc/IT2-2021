@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let tre = [
+            [0,0,0],
+            [0,0,0],
+            [0,0,0]
+        ];
+
+
+        let frames = 0;
+        let tid = 4;
+
+        function tellNed(){
+            frames += 1;
+            if(frames % 60 === 0){
+                tid -= 1;
+               console.log(tid);
+            }
+            if(tid > 0){
+                requestAnimationFrame(tellNed);
+            }
+        }
+        tellNed();
+
+    </script>
+</body>
+</html>
