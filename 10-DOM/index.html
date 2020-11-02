@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <input id="inpVare" type="text">
+            <input id="inpPris" type="number">
+            <button id="btnLeggTil">Legg til</button>
+        </div>
+
+        <ul id="ulListe"></ul>
+    </main>
+
+    <script>
+        const inpVare = document.querySelector("#inpVare");
+        const btnLeggTil = document.querySelector("#btnLeggTil");
+        const ulListe = document.querySelector("#ulListe");
+
+        let varer = [];
+
+        function leggTilVare(){
+            let navn = inpVare.value;
+            let pris = Number(inpPris.value);
+
+            varer.push({
+                navn: navn,
+                pris: pris
+            });
+            skrivVarer();
+        }
+
+        btnLeggTil.onclick = leggTilVare;
+
+        function skrivVarer(){
+            ulListe.innerHTML = ""; // fjerner innholdet i listen
+            for(let vare of varer){
+                ulListe.innerHTML += `
+                    <li>${vare.navn}: ${vare.pris}kr</li>
+                `
+            }
+        }
+    </script>
+</body>
+</html>
