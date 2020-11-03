@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <label>
+            Fahrenheit
+            <input type="number" id="divFahren">
+        </label>
+        <div id="divRes">
+
+        </div>
+    </div>
+    <script>
+        const inpFahren = document.querySelector("#divFahren");
+        const divRes = document.querySelector("#divRes");
+
+        function regnUt() {
+            const fahren = Number(inpFahren.value);
+            const celsius = (fahren - 32) / 1.8;
+
+            divRes.innerHTML = `Celsius = ${celsius}`;
+        }
+
+        inpFahren.onkeydown = regnUt;
+    </script>
+</body>
+</html>
