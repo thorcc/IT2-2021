@@ -6,27 +6,24 @@
 	let hest;
 	let love;
 
-	function spillLyd(art){
-		if(art === "hund"){
+	function spillHund(){
 			hund.play();
-		}
-		else if(art === "katt"){
-			katt.play();
-		}
-		else if(art === "hest"){
-			hest.play();
-		}
-		else if(art === "love"){
-			love.play();
-		}
 	}
-
+	function spillKatt(){
+			katt.play();
+	}
+	function spillHest(){
+			hest.play();
+	}
+	function spillLove(){
+			love.play();
+	}
 </script>
 
-<img on:click={()=> spillLyd("hund")} src="hund.jpg" alt="">
-<img on:click={()=> spillLyd("katt")} src="katt.jpg" alt="">
-<img on:click={()=> spillLyd("hest")} src="hest.jpg" alt="">
-<img on:click={()=> spillLyd("love")} src="love.jpg" alt="">
+<img on:click={spillHund} src="hund.jpg" alt="">
+<img on:click={spillKatt} src="katt.jpg" alt="">
+<img on:click={spillHest} src="hest.jpg" alt="">
+<img on:click={spillLove} src="love.jpg" alt="">
 
 <audio bind:this={hund} src="hund.wav"></audio>
 <audio bind:this={katt} src="katt.wav"></audio>
