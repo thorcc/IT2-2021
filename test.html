@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romheaven | ROMs</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/spill-under.css">
+    <link rel="icon" href="../bilder/minilogo.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBqjfwd8EhcJKZeic2Bs3RpFiklrBLQyEc",
+            authDomain: "pokemon-d8ec1.firebaseapp.com",
+            projectId: "pokemon-d8ec1",
+            storageBucket: "pokemon-d8ec1.appspot.com",
+            messagingSenderId: "938919724271",
+            appId: "1:938919724271:web:248b1991b6045fa39dc71a"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../bilder/logo.png" alt="">
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./spill.html">ROMs</a>
+            <a href="./emu.html">Emulators</a>
+        </nav>
+    </header>
+    <main>
+        <section id="secSpill"></section>
+    </main>
+    <script>
+     
+        // Ny funksjon!!
+     const hentURL = async (link) => {
+        const storage = firebase.storage();
+        const storageRef = storage.ref();
+        const spillUrl = await storageRef.child(link).getDownloadURL();
+        return spillUrl;
+     }
+        const secSpill = document.querySelector("#secSpill");
+        const db = firebase.firestore();
+        const Spill = db.collection("Spill");
+        const url = new URL(window.location.href);
+        const id = url.searchParams.get("id");
+        console.log(id);
+        const hentSpill = async (id) => {
+            const svar = await Spill.doc(id).get();
+            console.log(svar.data());
+            const link = await hentURL(svar.data().link); // NY linje!
+            lagSpillHTML(svar.data(), link); // ,link er ny!
+        }
+        const lagSpillHTML = (Spill, link) => { // ,link er ny!
+            secSpill.innerHTML = `
+            <h2>${Spill.navn}</h2>
+            <section id="spillgrid">
+                <div>
+                    <img src="../bilder/${Spill.bilde}">
+                </div>
+                <a href=${link}>Last ned</a> <!-- Denne er ny!! -->
+                <div id="spillinfo">
+                    <p>Year: ${Spill.aar}</p>
+                    <p>Size: ${Spill.filstorrelse}</p>
+                    <p>Category: ${Spill.kategori} </p>
+                    <p>Console: ${Spill.konsoll} </p>
+                    <p>Region: ${Spill.region} </p>
+                    <p>Developer: ${Spill.utvikler} </p>
+                </div>
+                <div id="recom">
+                    <h3>recommended games</h3>
+                    <ol>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                        <li>x</li>
+                </div>
+            </section>
+            `;
+        }
+        hentSpill(id);
+    </script>
+</body>
+</html>
