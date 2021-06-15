@@ -1,6 +1,8 @@
 # Fordypningsprosjekt - IT2
 
-Du skal fordype deg i et tema som er relevant for IT2, og lage en applikasjon hvor du viser hva du har lært.
+## Oppgave
+
+Velg et tema som er relevant for IT2, undersøk temaet og lag en applikasjon som viser hva du har lært.
 
 - **Innlevering:** Kildekode til en applikasjon skal leveres på Teams.
 - **Frist**: 1 juni 2021, 23:59
